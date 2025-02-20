@@ -4,29 +4,34 @@ import Image from "next/image";
 import NavBarComponent from "@/components/navbar/page";
 import ViewButtons from "../components/button/SelectView";
 import SearchButton from "../components/button/SearchButton";
+import DayChanger from "../components/button/DayChanger";
+import Calendar from "../components/Calendar/Calendar";
 
 export default function Home() {
   return (
     <div className="flex h-screen">
       {/* Navbar a la izquierda */}
-      <div className="w-64 bg-gray-800 text-white p-4">
+      <div className="w-80 bg-gray-900 text-white p-4">
         <NavBarComponent />
       </div>
       {/* Contenido principal */}
-      <main className="flex-1 bg-background p-6">
-        
-          {/* Botones de vista */}
-          <div className="flex items-center justify-center w-full">
+      <main className="flex-1 bg-background ">
+
+        {/* Boton Para cambiar de dia*/}
+        <div className="flex items-center justify-between p-4 w-full relative ">
+          <DayChanger />
           <ViewButtons />
-          </div>
-      
-           {/* Botones de busqueda */}
-          <div className="flex items-center justify-end w-full relative top-[-35px]">
-            <SearchButton />
+          <SearchButton />
+        </div>
+
+        
+
+        <div >
+          <div className="flex justify-center items-start mt-10">
+            <Calendar />
           </div>
 
-        <div className="bg-white md:py-8 px-4 lg:max-w-7xl lg:mx-auto lg:px-8">
-          <p className="text-4xl font-bold text-gray-800 mb-8">Febrero 2025</p>
+          {/* 
           <div className="inline-flex flex-col space-y-1 items-start justify-start h-full w-full">
             <div className="inline-flex space-x-28 items-start justify-start pr-24 h-full w-full">
               <p className="w-12 h-full text-sm font-medium text-gray-800 uppercase">
@@ -155,20 +160,29 @@ export default function Home() {
                   <p className="text-sm font-medium text-gray-800">31</p>
                 </div>
                 <div className="flex items-start justify-start w-40 h-full pl-2 pr-32 pt-2.5 pb-24 border border-gray-200">
-                  <p className="opacity-50 text-sm font-medium text-gray-800">01</p>
+                  <p className="opacity-50 text-sm font-medium text-gray-800">
+                    01
+                  </p>
                 </div>
                 <div className="flex items-start justify-start w-40 h-full pl-2 pr-32 pt-2.5 pb-24 border border-gray-200">
-                  <p className="opacity-50 text-sm font-medium text-gray-800">02</p>
+                  <p className="opacity-50 text-sm font-medium text-gray-800">
+                    02
+                  </p>
                 </div>
                 <div className="flex items-start justify-start w-40 h-full pl-2 pr-32 pt-2.5 pb-24 border border-gray-200">
-                  <p className="opacity-50 text-sm font-medium text-gray-800">03</p>
+                  <p className="opacity-50 text-sm font-medium text-gray-800">
+                    03
+                  </p>
                 </div>
                 <div className="flex items-start justify-start w-40 h-full pl-2 pr-32 pt-2.5 pb-24 border border-gray-200">
-                  <p className="opacity-50 text-sm font-medium text-gray-800">04</p>
+                  <p className="opacity-50 text-sm font-medium text-gray-800">
+                    04
+                  </p>
                 </div>
               </div>
             </div>
           </div>
+          */}
         </div>
       </main>
     </div>
