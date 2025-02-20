@@ -1,5 +1,5 @@
 .react-calendar {
-  background-color: #111827 !important;
+  background-color: #18181b !important;
   color: white !important;
   border: none;
 }
@@ -43,3 +43,4 @@
 .react-calendar__month-view__days {
   grid-template-columns: repeat(6, 1fr) !important;
 }
+
