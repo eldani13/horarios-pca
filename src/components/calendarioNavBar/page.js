@@ -18,6 +18,7 @@ export default function CalendarioNavBar() {
   return (
     <div className="">
       <Calendar
+        locale="es-ES"
         onChange={setDate}
         value={date}
         showNavigation={false}
