@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import NavBarComponent from "@/components/navbar/page";
 import ViewButtons from "../components/button/SelectView";
