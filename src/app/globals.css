@@ -23,7 +23,7 @@ body {
 @layer utilities {
   .custom-scroll {
     scrollbar-width: thin; 
-    scrollbar-color: #4b5563 #1f2937; 
+    scrollbar-color: #18181b #18181b; 
   }
 
   .custom-scroll::-webkit-scrollbar {
